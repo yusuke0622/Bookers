@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// 共通設定
+body {
+    margin: 33px;
+    font-size: 13px;
+    line-height: 18px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+p, ul, td {
+    margin: 33px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
+td {
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+label {
+    display: block
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.btn{
+    padding: 3px 5px 2px 5px;
+    width: 80px;
+    font-size: 85%;
+    background-color: #FFF;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 2px #aaa;
+    margin-bottom: 10px;
+}
+
+.btn:active {
+    background-color: #c0c0c0;
+}
+
+.show-text strong {
+    margin-right: 5px;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 30px;
+}
+
+.error-message {
+    border: 2px solid red;
+    width: 500px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.error-message h3 {
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+    padding: 4px;
+}
+
+

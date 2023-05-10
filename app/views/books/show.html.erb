@@ -1,0 +1,14 @@
+<div class="success-message">
+    <%= flash[:success]  %>
+</div>
+    
+<div class="show-text">
+    <p><strong>Title:</strong><%= @book.title %></p>
+    <p><strong>Body:</strong><%= @book.body %></p>
+</div>
+
+<div class="link">
+    <%= link_to 'Edit', edit_book_path(@book.id), class: 'nav-link edit-link' %>
+    |
+    <%= link_to 'Back', '/books', class: 'nav-link' %>
+</div>
